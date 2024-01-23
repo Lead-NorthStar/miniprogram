@@ -18,7 +18,7 @@ package subscribe
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -27,8 +27,6 @@ const (
 
 /*
 发送订阅消息
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/subscribe-message/subscribeMessage.send.html
 

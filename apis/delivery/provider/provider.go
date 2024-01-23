@@ -18,7 +18,7 @@ package provider
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -27,8 +27,6 @@ const (
 
 /*
 配送公司更新配送单状态
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-provider/immediateDelivery.updateOrder.html
 

@@ -17,8 +17,8 @@ package updatable_message_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/minigame/apis/updatable_message"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/minigame/apis/updatable_message"
 )
 
 func ExampleCreateActivityId() {

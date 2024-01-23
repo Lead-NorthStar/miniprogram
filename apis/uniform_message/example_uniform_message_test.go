@@ -17,8 +17,8 @@ package uniform_message_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/apis/uniform_message"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/apis/uniform_message"
 )
 
 func ExampleSend() {

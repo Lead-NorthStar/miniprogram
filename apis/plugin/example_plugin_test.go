@@ -17,8 +17,8 @@ package plugin_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/apis/plugin"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/apis/plugin"
 )
 
 func ExampleApplyPlugin() {

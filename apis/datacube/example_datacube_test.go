@@ -17,8 +17,8 @@ package datacube_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/apis/datacube"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/apis/datacube"
 )
 
 func ExampleGetDailyRetain() {

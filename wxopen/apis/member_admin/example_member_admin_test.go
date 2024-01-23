@@ -17,8 +17,8 @@ package member_admin_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/wxopen/apis/member_admin"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/wxopen/apis/member_admin"
 )
 
 func ExampleBindTester() {

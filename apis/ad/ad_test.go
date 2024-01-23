@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/fastwego/miniprogram/test"
+	"github.com/Lead-NorthStar/miniprogram/test"
 )
 
 func TestMain(m *testing.M) {

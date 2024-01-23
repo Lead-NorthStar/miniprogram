@@ -19,7 +19,7 @@ import (
 	"bytes"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -32,8 +32,6 @@ const (
 /*
 添加地点
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/nearby-poi/nearbyPoi.add.html
 
 POST https://api.weixin.qq.com/wxa/addnearbypoi?access_token=ACCESS_TOKEN
@@ -44,8 +42,6 @@ func Add(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err error) 
 
 /*
 删除地点
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/nearby-poi/nearbyPoi.delete.html
 
@@ -58,8 +54,6 @@ func Delete(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err erro
 /*
 查看地点列表
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/nearby-poi/nearbyPoi.getList.html
 
 GET https://api.weixin.qq.com/wxa/getnearbypoilist?page=1&page_rows=20&access_token=ACCESS_TOKEN
@@ -70,8 +64,6 @@ func GetList(ctx *miniprogram.Miniprogram, params url.Values) (resp []byte, err 
 
 /*
 展示/取消展示附近小程序
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/nearby-poi/nearbyPoi.setShowStatus.html
 

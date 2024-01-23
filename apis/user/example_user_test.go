@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/apis/user"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/apis/user"
 )
 
 func ExampleCode2Session() {

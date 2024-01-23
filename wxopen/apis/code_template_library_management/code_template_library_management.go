@@ -18,7 +18,7 @@ package code_template_library_management
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (

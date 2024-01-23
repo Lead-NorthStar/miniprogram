@@ -18,7 +18,7 @@ package uniform_message
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -27,8 +27,6 @@ const (
 
 /*
 下发小程序和公众号统一的服务消息
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/uniform-message/uniformMessage.send.html
 

@@ -17,8 +17,8 @@ package security_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/minigame/apis/security"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/minigame/apis/security"
 )
 
 func ExampleImgSecCheck() {

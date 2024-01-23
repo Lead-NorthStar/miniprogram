@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/test"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/test"
 )
 
 func TestMain(m *testing.M) {

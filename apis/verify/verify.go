@@ -18,7 +18,7 @@ package verify
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -27,8 +27,6 @@ const (
 
 /*
 SOTER 生物认证秘钥签名验证
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/soter/soter.verifySignature.html
 

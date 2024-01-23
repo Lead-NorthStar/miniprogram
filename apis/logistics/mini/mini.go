@@ -18,7 +18,7 @@ package mini
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -39,8 +39,6 @@ const (
 /*
 批量获取运单数据
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.batchGetOrder.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/business/order/batchget?access_token=ACCESS_TOKEN
@@ -51,8 +49,6 @@ func BatchGetOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, e
 
 /*
 生成运单
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.addOrder.html
 
@@ -65,8 +61,6 @@ func AddOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err er
 /*
 绑定、解绑物流账号
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.bindAccount.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/business/account/bind?access_token=ACCESS_TOKEN
@@ -77,8 +71,6 @@ func BindAccount(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err
 
 /*
 取消运单
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.cancelOrder.html
 
@@ -91,8 +83,6 @@ func CancelOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err
 /*
 获取所有绑定的物流账号
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.getAllAccount.html
 
 GET https://api.weixin.qq.com/cgi-bin/express/business/account/getall?access_token=ACCESS_TOKEN
@@ -103,8 +93,6 @@ func GetAllAccount(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 
 /*
 获取支持的快递公司列表
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.getAllDelivery.html
 
@@ -117,8 +105,6 @@ func GetAllDelivery(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 /*
 获取运单数据
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.getOrder.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/business/order/get?access_token=ACCESS_TOKEN
@@ -129,8 +115,6 @@ func GetOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err er
 
 /*
 查询运单轨迹
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.getPath.html
 
@@ -143,8 +127,6 @@ func GetPath(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err err
 /*
 获取打印员。若需要使用微信打单 PC 软件，才需要调用。
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.getPrinter.html
 
 GET https://api.weixin.qq.com/cgi-bin/express/business/printer/getall?access_token=ACCESS_TOKEN
@@ -155,8 +137,6 @@ func GetPrinter(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 
 /*
 获取电子面单余额。仅在使用加盟类快递公司时，才可以调用。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.getQuota.html
 
@@ -169,8 +149,6 @@ func GetQuota(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err er
 /*
 模拟快递公司更新订单状态, 该接口只能用户测试
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.testUpdateOrder.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/business/test_update_order?access_token=ACCESS_TOKEN
@@ -181,8 +159,6 @@ func TestUpdateOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte,
 
 /*
 配置面单打印员，可以设置多个，若需要使用微信打单 PC 软件，才需要调用。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-business/logistics.updatePrinter.html
 

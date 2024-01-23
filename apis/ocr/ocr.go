@@ -19,7 +19,7 @@ import (
 	"bytes"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -34,8 +34,6 @@ const (
 /*
 本接口提供基于小程序的银行卡 OCR 识别
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/ocr/ocr.bankcard.html
 
 POST https://api.weixin.qq.com/cv/ocr/bankcard?type=MODE&img_url=ENCODE_URL&access_token=ACCESS_TOCKEN
@@ -46,8 +44,6 @@ func Bankcard(ctx *miniprogram.Miniprogram, payload []byte, params url.Values) (
 
 /*
 本接口提供基于小程序的营业执照 OCR 识别
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/ocr/ocr.businessLicense.html
 
@@ -60,8 +56,6 @@ func BusinessLicense(ctx *miniprogram.Miniprogram, payload []byte, params url.Va
 /*
 本接口提供基于小程序的驾驶证 OCR 识别
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/ocr/ocr.driverLicense.html
 
 POST https://api.weixin.qq.com/cv/ocr/drivinglicense?img_url=ENCODE_URL&access_token=ACCESS_TOCKEN
@@ -72,8 +66,6 @@ func DriverLicense(ctx *miniprogram.Miniprogram, payload []byte, params url.Valu
 
 /*
 本接口提供基于小程序的身份证 OCR 识别
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/ocr/ocr.idcard.html
 
@@ -86,8 +78,6 @@ func Idcard(ctx *miniprogram.Miniprogram, payload []byte, params url.Values) (re
 /*
 本接口提供基于小程序的通用印刷体 OCR 识别
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/ocr/ocr.printedText.html
 
 POST https://api.weixin.qq.com/cv/ocr/comm?img_url=ENCODE_URL&access_token=ACCESS_TOCKEN
@@ -98,8 +88,6 @@ func PrintedText(ctx *miniprogram.Miniprogram, payload []byte, params url.Values
 
 /*
 本接口提供基于小程序的行驶证 OCR 识别
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/ocr/ocr.vehicleLicense.html
 

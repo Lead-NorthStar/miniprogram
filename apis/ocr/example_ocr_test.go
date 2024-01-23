@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/apis/ocr"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/apis/ocr"
 )
 
 func ExampleBankcard() {

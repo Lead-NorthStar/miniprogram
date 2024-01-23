@@ -18,7 +18,7 @@ package plugin
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -28,8 +28,6 @@ const (
 
 /*
 向插件开发者发起使用插件的申请/查询已添加的插件/删除已添加的插件
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/plugin-management/pluginManager.applyPlugin.html
 
@@ -41,8 +39,6 @@ func ApplyPlugin(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err
 
 /*
 获取当前所有插件使用方/修改插件使用申请的状态
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/plugin-management/pluginManager.getPluginDevApplyList.html
 

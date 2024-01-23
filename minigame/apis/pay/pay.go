@@ -18,7 +18,7 @@ package pay
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -31,8 +31,6 @@ const (
 /*
 取消订单。开通了虚拟支付的小游戏，若扣除游戏币的订单号在有效时间内，可以通过本接口取消该笔扣除游戏币的订单
 
-
-
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/midas-payment/midas.cancelPay.html
 
 POST https://api.weixin.qq.com/cgi-bin/midas/cancelpay?access_token=ACCESS_TOKEN
@@ -43,8 +41,6 @@ func CancelPay(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err e
 
 /*
 获取游戏币余额。开通了虚拟支付的小游戏，可以通过本接口查看某个用户的游戏币余额
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/midas-payment/midas.getBalance.html
 
@@ -57,8 +53,6 @@ func GetBalance(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err 
 /*
 扣除游戏币。开通了虚拟支付的小游戏，可以通过本接口扣除某个用户的游戏币。 由于可能存在接口调用超时或返回系统失败，但是游戏币实际已经扣除的情况，所以当该接口返回系统失败时，可以用相同的bill_no再次调用本接口，直到返回非系统失败为止，不会重复扣款，也可以调用取消支付接口取消本次扣款。
 
-
-
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/midas-payment/midas.pay.html
 
 POST https://api.weixin.qq.com/cgi-bin/midas/pay?access_token=ACCESS_TOKEN
@@ -69,8 +63,6 @@ func Pay(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err error) 
 
 /*
 给用户赠送游戏币。开通了虚拟支付的小游戏，可以通过该接口赠送游戏币给某个用户。
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/midas-payment/midas.present.html
 

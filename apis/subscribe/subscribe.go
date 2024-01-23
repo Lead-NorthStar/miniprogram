@@ -18,7 +18,7 @@ package subscribe
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -34,8 +34,6 @@ const (
 /*
 组合模板并添加至帐号下的个人模板库
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.addTemplate.html
 
 POST https://api.weixin.qq.com/wxaapi/newtmpl/addtemplate?access_token=ACCESS_TOKEN
@@ -46,8 +44,6 @@ func AddTemplate(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err
 
 /*
 删除帐号下的个人模板
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.deleteTemplate.html
 
@@ -60,8 +56,6 @@ func DeleteTemplate(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, 
 /*
 获取小程序账号的类目
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.getCategory.html
 
 GET https://api.weixin.qq.com/wxaapi/newtmpl/getcategory?access_token=ACCESS_TOKEN
@@ -72,8 +66,6 @@ func GetCategory(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 
 /*
 获取模板标题下的关键词列表
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.getPubTemplateKeyWordsById.html
 
@@ -86,8 +78,6 @@ func GetPubTemplateKeyWordsById(ctx *miniprogram.Miniprogram) (resp []byte, err 
 /*
 获取帐号所属类目下的公共模板标题
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.getPubTemplateTitleList.html
 
 GET https://api.weixin.qq.com/wxaapi/newtmpl/getpubtemplatetitles?access_token=ACCESS_TOKEN
@@ -99,8 +89,6 @@ func GetPubTemplateTitleList(ctx *miniprogram.Miniprogram) (resp []byte, err err
 /*
 获取当前帐号下的个人模板列表
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.getTemplateList.html
 
 GET https://api.weixin.qq.com/wxaapi/newtmpl/gettemplate?access_token=ACCESS_TOKEN
@@ -111,8 +99,6 @@ func GetTemplateList(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 
 /*
 发送订阅消息
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.send.html
 

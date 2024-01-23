@@ -17,8 +17,8 @@ package mini_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/apis/logistics/mini"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/apis/logistics/mini"
 )
 
 func ExampleBatchGetOrder() {

@@ -18,7 +18,7 @@ package mini
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -41,8 +41,6 @@ const (
 /*
 异常件退回商家商家确认收货接口
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.abnormalConfirm.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/local/business/order/confirm_return?access_token=ACCESS_TOKEN
@@ -53,8 +51,6 @@ func AbnormalConfirm(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte,
 
 /*
 下配送单接口
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.addOrder.html
 
@@ -67,8 +63,6 @@ func AddOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err er
 /*
 可以对待接单状态的订单增加小费。需要注意：订单的小费，以最新一次加小费动作的金额为准，故下一次增加小费额必须大于上一次小费额
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.addTip.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/local/business/order/addtips?access_token=ACCESS_TOKEN
@@ -79,8 +73,6 @@ func AddTip(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err erro
 
 /*
 第三方代商户发起绑定配送公司帐号的请求
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.bindAccount.html
 
@@ -93,8 +85,6 @@ func BindAccount(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err
 /*
 取消配送单接口
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.cancelOrder.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/local/business/order/cancel?access_token=ACCESS_TOKEN
@@ -105,8 +95,6 @@ func CancelOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err
 
 /*
 获取已支持的配送公司列表接口
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.getAllImmeDelivery.html
 
@@ -119,8 +107,6 @@ func GetAllImmeDelivery(ctx *miniprogram.Miniprogram, payload []byte) (resp []by
 /*
 拉取已绑定账号
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.getBindAccount.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/local/business/shop/get?access_token=ACCESS_TOKEN
@@ -131,8 +117,6 @@ func GetBindAccount(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, 
 
 /*
 拉取配送单信息
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.getOrder.html
 
@@ -145,8 +129,6 @@ func GetOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err er
 /*
 模拟配送公司更新配送单状态, 该接口只用于沙盒环境，即订单并没有真实流转到运力方
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.mockUpdateOrder.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/local/business/test_update_order?access_token=ACCESS_TOKEN
@@ -157,8 +139,6 @@ func MockUpdateOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte,
 
 /*
 第三方代商户发起开通即时配送权限
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.openDelivery.html
 
@@ -171,8 +151,6 @@ func OpenDelivery(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, er
 /*
 预下配送单接口
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.preAddOrder.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/local/business/order/pre_add?access_token=ACCESS_TOKEN
@@ -183,8 +161,6 @@ func PreAddOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err
 
 /*
 预取消配送单接口
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.preCancelOrder.html
 
@@ -197,8 +173,6 @@ func PreCancelOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, 
 /*
 模拟配送公司更新配送单状态, 该接口用于测试账户下的单，将请求转发到运力测试环境
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.realMockUpdateOrder.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/local/business/realmock_update_order?access_token=ACCESS_TOKEN
@@ -209,8 +183,6 @@ func RealMockUpdateOrder(ctx *miniprogram.Miniprogram, payload []byte) (resp []b
 
 /*
 重新下单
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/immediate-delivery/by-business/immediateDelivery.reOrder.html
 

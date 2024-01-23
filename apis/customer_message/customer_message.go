@@ -19,7 +19,7 @@ import (
 	"bytes"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -32,8 +32,6 @@ const (
 /*
 获取客服消息内的临时素材。即下载临时的多媒体文件。目前小程序仅支持下载图片文件。
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/customer-message/customerServiceMessage.getTempMedia.html
 
 GET https://api.weixin.qq.com/cgi-bin/media/get?access_token=ACCESS_TOKEN&media_id=MEDIA_ID
@@ -44,8 +42,6 @@ func GetTempMedia(ctx *miniprogram.Miniprogram, params url.Values) (resp []byte,
 
 /*
 发送客服消息给用户。详细规则见 发送客服消息
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/customer-message/customerServiceMessage.send.html
 
@@ -58,8 +54,6 @@ func Send(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err error)
 /*
 下发客服当前输入状态给用户。详见 客服消息输入状态
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/customer-message/customerServiceMessage.setTyping.html
 
 POST https://api.weixin.qq.com/cgi-bin/message/custom/typing?access_token=ACCESS_TOKEN
@@ -70,8 +64,6 @@ func SetTyping(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err e
 
 /*
 把媒体文件上传到微信服务器。目前仅支持图片。用于发送客服消息或被动回复用户消息。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/customer-message/customerServiceMessage.uploadTempMedia.html
 

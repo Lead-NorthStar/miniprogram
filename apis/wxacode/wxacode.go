@@ -18,7 +18,7 @@ package wxacode
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -29,8 +29,6 @@ const (
 
 /*
 获取小程序二维码，适用于需要的码数量较少的业务场景。通过该接口生成的小程序码，永久有效，有数量限制，详见获取二维码。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.createQRCode.html
 
@@ -43,8 +41,6 @@ func CreateQRCode(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, er
 /*
 获取小程序码，适用于需要的码数量较少的业务场景。通过该接口生成的小程序码，永久有效，有数量限制，详见获取二维码。
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.get.html
 
 POST https://api.weixin.qq.com/wxa/getwxacode?access_token=ACCESS_TOKEN
@@ -55,8 +51,6 @@ func Get(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err error) 
 
 /*
 获取小程序码，适用于需要的码数量极多的业务场景。通过该接口生成的小程序码，永久有效，数量暂无限制。 更多用法详见 获取二维码。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html
 

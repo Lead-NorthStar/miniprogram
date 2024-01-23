@@ -18,7 +18,7 @@ package provider
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -31,8 +31,6 @@ const (
 /*
 获取面单联系人信息
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-provider/logistics.getContact.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/delivery/contact/get?access_token=ACCESS_TOKEN
@@ -43,8 +41,6 @@ func GetContact(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, err 
 
 /*
 预览面单模板。用于调试面单模板使用。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-provider/logistics.previewTemplate.html
 
@@ -57,8 +53,6 @@ func PreviewTemplate(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte,
 /*
 更新商户审核结果
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-provider/logistics.updateBusiness.html
 
 POST https://api.weixin.qq.com/cgi-bin/express/delivery/service/business/update?access_token=ACCESS_TOKEN
@@ -69,8 +63,6 @@ func UpdateBusiness(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, 
 
 /*
 更新运单轨迹
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/express/by-provider/logistics.updatePath.html
 

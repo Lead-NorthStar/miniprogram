@@ -19,7 +19,7 @@ import (
 	"bytes"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -30,8 +30,6 @@ const (
 
 /*
 删除已经上报到微信的key-value数据
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/data/storage.removeUserStorage.html
 
@@ -44,8 +42,6 @@ func RemoveUserStorage(ctx *miniprogram.Miniprogram, payload []byte, params url.
 /*
 写用户关系链互动数据存储
 
-
-
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/data/storage.setUserInteractiveData.html
 
 POST https://api.weixin.qq.com/wxa/setuserinteractivedata?access_token=ACCESS_TOKEN&signature=SIGNATURE&openid=OPENID&sig_method=SIG_METHOD
@@ -56,8 +52,6 @@ func SetUserInteractiveData(ctx *miniprogram.Miniprogram, payload []byte, params
 
 /*
 上报用户数据后台接口。小游戏可以通过本接口上报key-value数据到用户的CloudStorage。
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/data/storage.setUserStorage.html
 

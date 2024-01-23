@@ -17,8 +17,8 @@ package service_market_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/apis/service_market"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/apis/service_market"
 )
 
 func ExampleInvokeService() {

@@ -17,8 +17,8 @@ package qrcode_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/wxopen/apis/qrcode"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/wxopen/apis/qrcode"
 )
 
 func ExampleQRCodeJumpGet() {

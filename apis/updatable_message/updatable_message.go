@@ -18,7 +18,7 @@ package updatable_message
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -28,8 +28,6 @@ const (
 
 /*
 创建被分享动态消息的 activity_id。详见动态消息。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/updatable-message/updatableMessage.createActivityId.html
 
@@ -41,8 +39,6 @@ func CreateActivityId(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 
 /*
 修改被分享的动态消息。详见动态消息。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/updatable-message/updatableMessage.setUpdatableMsg.html
 

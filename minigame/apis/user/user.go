@@ -18,7 +18,7 @@ package user
 import (
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -28,8 +28,6 @@ const (
 
 /*
 校验服务器所保存的登录态 session_key 是否合法。为了保持 session_key 私密性，接口不明文传输 session_key，而是通过校验登录态签名完成。
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/login/auth.checkSessionKey.html
 
@@ -41,8 +39,6 @@ func CheckSessionKey(ctx *miniprogram.Miniprogram, params url.Values) (resp []by
 
 /*
 登录凭证校验。通过 wx.login 接口获得临时登录凭证 code 后传到开发者服务器调用此接口完成登录流程。更多使用方法详见 小程序登录。
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/login/auth.code2Session.html
 

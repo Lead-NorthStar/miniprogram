@@ -17,8 +17,8 @@ package basic_info_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/wxopen/apis/basic_info"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/wxopen/apis/basic_info"
 )
 
 func ExampleGetAccountBasicInfo() {

@@ -19,7 +19,7 @@ import (
 	"bytes"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -30,8 +30,6 @@ const (
 
 /*
 本接口提供基于小程序的图片智能裁剪能力。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/img/img.aiCrop.html
 
@@ -44,8 +42,6 @@ func AiCrop(ctx *miniprogram.Miniprogram, payload []byte, params url.Values) (re
 /*
 本接口提供基于小程序的条码/二维码识别的API。
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/img/img.scanQRCode.html
 
 POST https://api.weixin.qq.com/cv/img/qrcode?img_url=ENCODE_URL&access_token=ACCESS_TOCKEN
@@ -56,8 +52,6 @@ func ScanQRCode(ctx *miniprogram.Miniprogram, payload []byte, params url.Values)
 
 /*
 本接口提供基于小程序的图片高清化能力。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/img/img.superresolution.html
 

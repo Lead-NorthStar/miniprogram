@@ -17,8 +17,8 @@ package pay_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/minigame/apis/pay"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/minigame/apis/pay"
 )
 
 func ExampleCancelPay() {

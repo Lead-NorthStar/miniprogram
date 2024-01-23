@@ -17,8 +17,8 @@ package code_template_library_management_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/wxopen/apis/code_template_library_management"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/wxopen/apis/code_template_library_management"
 )
 
 func ExampleGetTemplateDraftList() {

@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/wxopen/apis/code_management"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/wxopen/apis/code_management"
 )
 
 func ExampleCommit() {

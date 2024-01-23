@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/minigame/apis/frame"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/minigame/apis/frame"
 )
 
 func ExampleCreateGameRoom() {

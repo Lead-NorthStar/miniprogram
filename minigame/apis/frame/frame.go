@@ -19,7 +19,7 @@ import (
 	"bytes"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -32,8 +32,6 @@ const (
 /*
 第三方后台创建帧同步游戏房间
 
-
-
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/lock-step/lock-step.createGameRoom.html
 
 POST https://api.weixin.qq.com/wxa/createwxagameroom?access_token=ACCESS_TOKEN
@@ -44,8 +42,6 @@ func CreateGameRoom(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, 
 
 /*
 分片拉取对局游戏帧
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/lock-step/lock-step.getGameFrame.html
 
@@ -58,8 +54,6 @@ func GetGameFrame(ctx *miniprogram.Miniprogram, params url.Values) (resp []byte,
 /*
 获取对局玩家位次信息
 
-
-
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/lock-step/lock-step.getGameIdentityInfo.html
 
 GET https://api.weixin.qq.com/wxa/getwxagameidentityinfo?access_token=XXX&access_info=YYY
@@ -70,8 +64,6 @@ func GetGameIdentityInfo(ctx *miniprogram.Miniprogram, params url.Values) (resp 
 
 /*
 获取指定房间信息
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/lock-step/lock-step.getGameRoomInfo.html
 

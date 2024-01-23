@@ -22,7 +22,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -33,8 +33,6 @@ const (
 
 /*
 校验一张图片是否含有违法违规内容。
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/sec-check/security.imgSecCheck.html
 
@@ -67,8 +65,6 @@ func ImgSecCheck(ctx *miniprogram.Miniprogram, media string) (resp []byte, err e
 /*
 异步校验图片/音频是否含有违法违规内容。
 
-
-
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/sec-check/security.mediaCheckAsync.html
 
 POST https://api.weixin.qq.com/wxa/media_check_async?access_token=ACCESS_TOKEN
@@ -79,8 +75,6 @@ func MediaCheckAsync(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte,
 
 /*
 检查一段文本是否含有违法违规内容。
-
-
 
 See: https://developers.weixin.qq.com/minigame/dev/api-backend/open-api/sec-check/security.msgSecCheck.html
 

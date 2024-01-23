@@ -19,7 +19,7 @@ import (
 	"bytes"
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -200,8 +200,6 @@ func RevertGrayRelease(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 
 /*
 修改小程序线上代码的可见状态
-
-
 
 See: https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/Mini_Programs/code/change_visitstatus.html
 

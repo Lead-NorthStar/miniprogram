@@ -18,7 +18,7 @@ package operation
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -33,8 +33,6 @@ const (
 /*
 获取用户反馈列表
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/operation/operation.getFeedback.html
 
 GET https://api.weixin.qq.com/wxaapi/feedback/list?access_token=ACCESS_TOKEN
@@ -45,8 +43,6 @@ func GetFeedback(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 
 /*
 错误查询
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/operation/operation.getJsErrSearch.html
 
@@ -59,8 +55,6 @@ func GetJsErrSearch(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, 
 /*
 性能监控
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/operation/operation.getPerformance.html
 
 POST https://api.weixin.qq.com/wxaapi/log/get_performance?access_token=ACCESS_TOKEN
@@ -71,8 +65,6 @@ func GetPerformance(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, 
 
 /*
 获取访问来源
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/operation/operation.getSceneList.html
 
@@ -85,8 +77,6 @@ func GetSceneList(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 /*
 获取客户端版本
 
-
-
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/operation/operation.getVersionList.html
 
 GET https://api.weixin.qq.com/wxaapi/log/get_client_version?access_token=ACCESS_TOKEN
@@ -97,8 +87,6 @@ func GetVersionList(ctx *miniprogram.Miniprogram) (resp []byte, err error) {
 
 /*
 实时日志查询
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/operation/operation.realtimelogSearch.html
 

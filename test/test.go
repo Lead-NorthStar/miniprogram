@@ -20,7 +20,7 @@ import (
 	"net/http/httptest"
 	"sync"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 var MockMiniprogram *miniprogram.Miniprogram

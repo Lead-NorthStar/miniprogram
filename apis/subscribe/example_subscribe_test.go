@@ -17,8 +17,8 @@ package subscribe_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/apis/subscribe"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/apis/subscribe"
 )
 
 func ExampleAddTemplate() {

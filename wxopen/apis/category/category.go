@@ -18,7 +18,7 @@ package category
 import (
 	"bytes"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -97,8 +97,6 @@ func ModifyCategory(ctx *miniprogram.Miniprogram, payload []byte) (resp []byte, 
 
 /*
 获取审核时可填写的类目信息
-
-
 
 See: https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/Mini_Programs/category/get_category.html
 

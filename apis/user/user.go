@@ -18,7 +18,7 @@ package user
 import (
 	"net/url"
 
-	"github.com/fastwego/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram"
 )
 
 const (
@@ -28,8 +28,6 @@ const (
 
 /*
 登录凭证校验。通过 wx.login 接口获得临时登录凭证 code 后传到开发者服务器调用此接口完成登录流程。更多使用方法详见 小程序登录。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/login/auth.code2Session.html
 
@@ -41,8 +39,6 @@ func Code2Session(ctx *miniprogram.Miniprogram, params url.Values) (resp []byte,
 
 /*
 用户支付完成后，获取该用户的 UnionId，无需用户授权。本接口支持第三方平台代理查询。
-
-
 
 See: https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/user-info/auth.getPaidUnionId.html
 

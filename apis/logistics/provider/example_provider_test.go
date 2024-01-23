@@ -17,8 +17,8 @@ package provider_test
 import (
 	"fmt"
 
-	"github.com/fastwego/miniprogram"
-	"github.com/fastwego/miniprogram/apis/logistics/provider"
+	"github.com/Lead-NorthStar/miniprogram"
+	"github.com/Lead-NorthStar/miniprogram/apis/logistics/provider"
 )
 
 func ExampleGetContact() {

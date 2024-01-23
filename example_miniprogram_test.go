@@ -18,10 +18,10 @@ import (
 	"log"
 	"os"
 
+	"github.com/Lead-NorthStar/miniprogram"
 	"github.com/faabiosr/cachego/file"
 	"github.com/faabiosr/cachego/sync"
-	"github.com/fastwego/miniprogram"
-	"github.com/garyburd/redigo/redis"
+	"github.com/gomodule/redigo/redis"
 )
 
 func ExampleMiniprogram_SetAccessTokenCacheDriver() {
